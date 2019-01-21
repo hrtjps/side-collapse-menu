@@ -6,7 +6,7 @@
   color: white;
 }
 
-.navbar-global .navbar-user > li > a
+.navbar-global .navbar-user > li > div
 {
   color: white;
 }
@@ -62,7 +62,7 @@
   list-style: none;
 }
 
-.navbar-primary-menu li a {
+.navbar-primary-menu li div {
   display: block;
   padding: 10px 0px;
   text-align: left;
@@ -70,17 +70,17 @@
   color: white;
 }
 
-.navbar-primary-menu li a:hover {
+.navbar-primary-menu li div:hover {
   background-color: #000;
   text-decoration: none;
   color: white;
 }
 
-.navbar-primary-menu li a .far {
+.navbar-primary-menu li div .far {
   margin-right: 6px;
 }
 
-.navbar-primary-menu li a:hover .far {
+.navbar-primary-menu li div:hover .far {
   color: orchid;
 }
 
