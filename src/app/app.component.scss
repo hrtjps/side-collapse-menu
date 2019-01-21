@@ -1,40 +1,35 @@
 .navbar-global {
   background-color: indigo;
-}
-
-.navbar-global .navbar-brand {
-  color: white;
-}
-
-.navbar-global .navbar-user > li > div
-{
-  color: white;
+  .navbar-brand {
+    color: white;
+  }
+  .navbar-user > li > div
+  {
+    color: white;
+  }
 }
 
 .navbar-primary {
   background-color: #1B2432;
-  bottom: 0px;
   left: 0px;
   position: absolute;
   top: 0px;
   width: 200px;
   z-index: 8;
-  overflow: hidden;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  height: 100%;
 }
 
 .navbar-primary.collapsed {
   width: 50px;
-}
-
-.navbar-primary.collapsed .far {
-  font-size: 20px;
-}
-
-.navbar-primary.collapsed .nav-label {
-  display: none;
+  .far {
+    font-size: 20px;
+  }
+  .nav-label {
+    display: none;
+  }
 }
 
 .btn-expand-collapse {
@@ -44,49 +39,41 @@
     color: white;
     font-size: 20px;
     text-align: right;
-}
-
-.btn-expand-collapse:hover,
-.btn-expand-collapse:focus {
-    background-color: #222;
-    color: white;
-}
-
-.btn-expand-collapse:active {
-    background-color: #111;
+    &:hover, &:focus{
+      background-color: #222;
+      color: white;
+    }
+    &:active{
+      background-color: #111;
+    }
 }
 
 .navbar-primary-menu,
 .navbar-primary-menu li {
   margin:0; padding:0px 5px;
   list-style: none;
-}
-
-.navbar-primary-menu li div {
-  display: block;
-  padding: 10px 0px;
-  text-align: left;
-  border-bottom:solid 1px #aaa;
-  color: white;
-}
-
-.navbar-primary-menu li div:hover {
-  background-color: #000;
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-primary-menu li div .far {
-  margin-right: 6px;
-}
-
-.navbar-primary-menu li div:hover .far {
-  color: orchid;
+  div {
+    display: block;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom:solid 1px #aaa;
+    color: white;
+    &:hover{
+      background-color: #000;
+      text-decoration: none;
+      color: white;
+      .far {
+        color: orchid;
+      }
+    }
+    .far {
+      margin-right: 6px;
+    }
+  }
 }
 
 .navbar-secondary {
   background-color: #3f4a5b;
-  bottom: 0px;
   left: 200px;
   position: absolute;
   top: 0px;
@@ -96,6 +83,7 @@
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  height: 100%;
 }
 
 .collapsed + .navbar-secondary{
@@ -104,14 +92,12 @@
 
 .navbar-secondary.collapsed {
   width: 50px;
-}
-
-.navbar-secondary.collapsed .far {
-  font-size: 20px;
-}
-
-.navbar-secondary.collapsed .nav-label {
-  display: none;
+  .far {
+    font-size: 20px;
+  }
+  .nav-label {
+    display: none;
+  }
 }
 
 .main-content {
